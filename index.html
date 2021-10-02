@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Μανταρίνια Καλλές</title>
+</head>
+<body>
+<section class="showcase">
+    <header>
+        <h2  class="logo"><span style="color:rgb(255, 123, 0); font-size: 1.1em;"> ΜΑΝΤΑΡΙΝΙΑ</span> ΚΑΛΛΕΣ</h2>
+        <div class="toggle"></div>
+    </header>
+    <video src="https://res.cloudinary.com/dzu1doi1x/video/upload/q_auto,f_auto,fl_lossy/v1612816360/ena_mantarini_of1i79.mp4" muted loop autoplay></video>
+    <div class="overlay"></div>
+    <div class="text">
+        <h2>ΠΑΡΑΓΩΓΗ <span style="color:rgb(255, 123, 0);">ΜΑΝΤΑΡΙΝΩΝ </span> </h2>
+        <h3>ΣΤΟΝ ΚΑΜΠΟ ΤΗΣ ΚΕΣΤΡΙΝΗΣ</h3>
+        <p>Η περιοχή που καλλιεργούνται τα εσπεριδοειδή Θεσπρωτίας
+             βρίσκεται εντός των ορίων του προστατευόμενου οικοσυστήματος
+             NATURA 2000 και κατά συνεπεία οι παραγωγοί ακολουθούν ορθολογικές
+             πρακτικές με σεβασμό στο περιβάλλον και τον άνθρωπο (καταναλωτή)..</p>
+            <a href="contact.html">ΕΠΙΚΟΙΝΩΝΙΑ</a>
+    </div>
+
+    <ul class="social">
+        <li><a href="#"><img src="/img/facebook.png" alt=""></a></li>
+        <li><a href="#"><img src="/img/twitter.png" alt=""></a></li>
+        <li><a href="#"><img src="/img/instagram.png" alt=""></a></li>
+    </ul>
+</section>
+<div class="menu">
+    <ul>
+        <li><a href="index.html">Αρχική</a></li>
+        <li><a href="topothesia.html">Τοποθεσία</a></li>
+        <li><a href="contact.html">Επικοινωνία</a></li>
+    </ul>
+</div>
+<script>
+    const menuToggle = document.querySelector('.toggle')
+    const showcase = document.querySelector('.showcase')
+
+    menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('active')
+        showcase.classList.toggle('active')
+
+    })
+</script>
+</body>
+</html>

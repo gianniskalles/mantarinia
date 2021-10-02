@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Τοποθεσία</title>
+</head>
+<body>
+    <section class="showcase">
+        <header>
+            <h2  class="logo"><span style="color:rgb(255, 123, 0); font-size: 1.1em;"> ΜΑΝΤΑΡΙΝΙΑ</span> ΚΑΛΛΕΣ</h2>
+            <div class="toggle"></div>
+        </header>
+        <video src="https://res.cloudinary.com/dzu1doi1x/video/upload/q_auto,f_auto,fl_lossy/v1612816360/ena_mantarini_of1i79.mp4" muted loop autoplay></video>
+        <div class="overlay"></div>
+        <div class="text">
+            <h2>Τοποθεσία </h2>
+            <p>Τα Μανταρίνια μας παράγονται και συλλέγονται στον Κάμπο της Κεστρίνης του νομού Θεσπρωτίας σε περιοχή NATURA 2000, δίπλα απο τον ποταμό Καλαμά.</p>
+        </div>
+
+
+        
+        <ul class="social">
+            <li><a href="#"><img src="/img/facebook.png" alt=""></a></li>
+            <li><a href="#"><img src="/img/twitter.png" alt=""></a></li>
+            <li><a href="#"><img src="/img/instagram.png" alt=""></a></li>
+        </ul>
+
+        <div class="map">
+            <iframe class="map1" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d505.2446911722698!2d20.202213702091463!3d39.54755241356546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sel!2sgr!4v1615495305087!5m2!1sel!2sgr" width="100%" height="450vh" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+    <div class="menu">
+        <ul>
+            <li><a href="index.html">Αρχική</a></li>
+            <li><a href="topothesia.html">Τοποθεσία</a></li>
+            <li><a href="contact.html">Επικοινωνία</a></li>
+        </ul>
+    </div>
+    <script>
+        const menuToggle = document.querySelector('.toggle')
+        const showcase = document.querySelector('.showcase')
+    
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active')
+            showcase.classList.toggle('active')
+    
+        })
+    </script>
+    </body>

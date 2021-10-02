@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="stylecontact.css">
+    <title>Επικοινωνία</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+<section class="showcase">
+    <header>
+        <h2  class="logo"><span style="color:rgb(255, 123, 0); font-size: 1.1em;"> ΜΑΝΤΑΡΙΝΙΑ</span> ΚΑΛΛΕΣ</h2>
+        <div class="toggle"></div>
+    </header>
+    <video src="https://res.cloudinary.com/dzu1doi1x/video/upload/q_auto,f_auto,fl_lossy/v1612816360/ena_mantarini_of1i79.mp4" muted loop autoplay></video>
+    <div class="overlay"></div>
+    <section1 class="contact">
+        <div class="content">
+            <h2>Επικοινωνιστε μαζι μας</h2>
+            <p>Eπικοινωνήστε μαζί μας στα παρακάτω τηλέφωνα, την φόρμα επικοινωνίας ή το email.</p>
+        </div>
+        <div class="container">
+            <div class="contactInfo">
+                <div class="box">
+                  <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i>
+                  </i>
+                  </div>
+                  <div class="text">
+                      <h3>Διεύθηνση</h3>
+                      <p>Κύπρου 1, <br>Ηγουμενίτσα<br>46100</p>
+                  </div>  
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i>
+                    </div>
+                    <div class="text">
+                        <h3>Τηλέφωνο</h3>
+                        <p>2665012345</p>
+                    </div>  
+                  </div>
+                  <div class="box">
+                    <div class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i>
+                    </div>
+                    <div class="text">
+                        <h3>Email</h3>
+                        <p>info@info.gr</p>
+                    </div>  
+                  </div>
+                </div>
+                <div class="contactForm">
+                    <form action="https://formspree.io/f/xvoveaon" method="POST">
+                        <h2>Αποστολή Μηνύματος</h2>
+                        <div class="inputBox">
+                            <input type="text" name="name" required="required">
+                            <span>Ονοματεπώνυμο</span>
+                        </div>
+                        <div class="inputBox">
+                            <input type="email" name="_replyto" required="required">
+                            <span>Email</span>
+                        </div>
+                        <div class="inputBox">
+                            <textarea name="message" required="required"></textarea>
+                            <span>Γράψτε το μήνυμά σας</span>
+                        </div>
+                        <div class="inputBox">
+                            <input type="submit" name="" value="Αποστολή">
+                        </div>
+                        </div>
+                    </form>
+                </div>
+        </div>
+    </section>
+    <div class="menu">
+        <ul>
+            <li><a href="index.html">Αρχική</a></li>
+            <li><a href="topothesia.html">Τοποθεσία</a></li>
+            <li><a href="contact.html">Επικοινωνία</a></li>
+        </ul>
+    </div>
+    <script>
+        const menuToggle = document.querySelector('.toggle')
+        const showcase = document.querySelector('.showcase')
+    
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active')
+            showcase.classList.toggle('active')
+    
+        })
+    </script>
+</body>
+</html>
