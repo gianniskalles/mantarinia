@@ -203,11 +203,12 @@
   }
 
   .map {
+    transform: translateY(-5rem);
     opacity: 0.99;
     position:relative;
     left: 0;
     right: 0;
-    width: 200%;
+    width: 100%;
 
   }
 
